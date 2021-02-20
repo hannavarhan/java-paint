@@ -2,30 +2,24 @@ package logic;
 
 import java.awt.*;
 
-public class Shape {
-    private Point theCenter;
-    private Color theLineColor;
+abstract class Shape {
+    protected Point theCenter;
+    protected Color theLineColor;
 
-    public void draw() {
+    // abstract
+    protected abstract void draw();
+    protected abstract void move();
+
+    // others
+    protected Point getTheCenter() {
+        return null;
     }
 
-    public void move() {
-
+    protected  Color getTheLineColor() {
+        return null;
     }
 
-    public Point getTheCenter() {
-        return theCenter;
-    }
+    protected void setTheCenter(Point theCenter) {}
 
-    public Color getTheLineColor() {
-        return theLineColor;
-    }
-
-    public void setTheCenter(Point theCenter) {
-        this.theCenter = theCenter;
-    }
-
-    public void setTheLineColor(Color theLineColor) {
-        this.theLineColor = theLineColor;
-    }
+    protected void setTheLineColor(Color theLineColor) {}
 }
