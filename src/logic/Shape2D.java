@@ -5,16 +5,6 @@ import java.awt.*;
 public class Shape2D extends Shape {
     protected Color theFillColor;
 
-    @Override
-    protected void draw() {
-
-    }
-
-    @Override
-    protected void move() {
-
-    }
-
     public Color getTheFillColor() {
         return theFillColor;
     }
@@ -22,4 +12,10 @@ public class Shape2D extends Shape {
     public void setTheFillColor(Color theFillColor) {
         this.theFillColor = theFillColor;
     }
+
+    @Override
+    protected void draw() {}
+
+    @Override
+    protected void move() {}
 }
