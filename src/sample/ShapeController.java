@@ -38,7 +38,7 @@ public class ShapeController {
     private RadioButton rayBtn;
 
     @FXML
-    private RadioButton triangleBtn;
+    private RadioButton polygonBtn;
 
     @FXML
     private RadioButton brokenLineBtn;

@@ -8,53 +8,53 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="819.0" style="-fx-background-color: #E4EBEC;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShapeController">
-    <children>
-        <Pane fx:id="drawPanel" layoutX="14.0" layoutY="14.0" prefHeight="651.0" prefWidth="566.0" style="-fx-background-color: #FFFFFF;" />
-        <AnchorPane layoutX="592.0" layoutY="26.0" prefHeight="106.0" prefWidth="214.0">
-            <children>
-                <Text fill="#02476f" layoutX="31.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional parameters:">
-                    <font>
-                        <Font name="Corbel Bold" size="16.0" />
-                    </font>
-                </Text>
-                <TextField fx:id="userInfoArea" layoutX="10.0" layoutY="43.0" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #F4F7F9;" />
-                <Text fx:id="parameterDescriptionField" fill="#7e95a4" layoutX="14.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
-            </children>
-        </AnchorPane>
-        <AnchorPane layoutX="592.0" layoutY="156.0" prefHeight="157.0" prefWidth="214.0">
-            <children>
-                <Text fill="#02476f" layoutX="83.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colors:">
-                    <font>
-                        <Font name="Corbel Bold" size="16.0" />
-                    </font>
-                </Text>
-                <ColorPicker fx:id="lineColorPicker" layoutX="8.0" layoutY="39.0" style="-fx-background-color: #F4F7F9;" />
-                <Text fill="#7e95a4" layoutX="14.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color of line" />
-                <ColorPicker fx:id="fillColorPicker" layoutX="8.0" layoutY="100.0" style="-fx-background-color: #F4F7F9;" />
-                <Text fill="#7e95a4" layoutX="14.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color of fill" />
-            </children>
-        </AnchorPane>
-        <AnchorPane layoutX="588.0" layoutY="346.0" prefHeight="310.0" prefWidth="222.0">
-            <children>
-                <Text fill="#02476f" layoutX="88.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shapes:">
-                    <font>
-                        <Font name="Corbel Bold" size="16.0" />
-                    </font>
-                </Text>
-                <RadioButton id="lineBtn" fx:id="lineBtn" layoutX="14.0" layoutY="34.0" mnemonicParsing="false" text="Line" textFill="#00304c" />
-                <RadioButton id="rayBtn" fx:id="rayBtn" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" text="Ray" textFill="#00304c" />
-                <RadioButton id="triangleBtn" fx:id="triangleBtn" layoutX="14.0" layoutY="129.0" mnemonicParsing="false" text="Triangle" textFill="#00304c" />
-                <RadioButton fx:id="brokenLineBtn" layoutX="14.0" layoutY="105.0" mnemonicParsing="false" text="Broken line" textFill="#00304c" />
-                <RadioButton id="segmentBtn" fx:id="segmentBtn" layoutX="14.0" layoutY="82.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="88.0" text="Segment" textFill="#00304c" />
-                <RadioButton id="ellipseBtn" fx:id="ellipseBtn" layoutX="14.0" layoutY="201.0" mnemonicParsing="false" text="Ellipse" textFill="#00304c" />
-                <RadioButton id="rhombusBtn" fx:id="rhombusBtn" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" text="Rhombus" textFill="#00304c" />
-                <RadioButton id="parallelogramBtn" fx:id="parallelogramBtn" layoutX="14.0" layoutY="154.0" mnemonicParsing="false" text="Parallelogram" textFill="#00304c" />
-                <RadioButton id="circleBtn" fx:id="circleBtn" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" text="Circle" textFill="#00304c" />
-                <RadioButton fx:id="rectangleBtn" layoutX="14.0" layoutY="274.0" mnemonicParsing="false" text="Rectangle" textFill="#00304c" />
-                <RadioButton id="regularPolygonBtn" fx:id="regularPolygon" layoutX="14.0" layoutY="249.0" mnemonicParsing="false" text="Regular polygon" textFill="#00304c" />
-            </children>
-        </AnchorPane>
-    </children>
+   <children>
+      <Pane fx:id="drawPanel" layoutX="14.0" layoutY="14.0" prefHeight="651.0" prefWidth="566.0" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="592.0" layoutY="98.0" prefHeight="106.0" prefWidth="214.0">
+         <children>
+            <Text fill="#02476f" layoutX="31.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional parameters:">
+               <font>
+                  <Font name="Corbel Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="userInfoArea" layoutX="10.0" layoutY="43.0" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #F4F7F9;" />
+            <Text fx:id="parameterDescriptionField" fill="#7e95a4" layoutX="14.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="592.0" layoutY="203.0" prefHeight="157.0" prefWidth="214.0">
+         <children>
+            <Text fill="#02476f" layoutX="83.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colors:">
+               <font>
+                  <Font name="Corbel Bold" size="16.0" />
+               </font>
+            </Text>
+            <ColorPicker fx:id="lineColorPicker" layoutX="8.0" layoutY="39.0" style="-fx-background-color: #F4F7F9;" />
+            <Text fill="#7e95a4" layoutX="14.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color of line" />
+            <ColorPicker fx:id="fillColorPicker" layoutX="8.0" layoutY="100.0" style="-fx-background-color: #F4F7F9;" />
+            <Text fill="#7e95a4" layoutX="14.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color of fill" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="588.0" layoutY="354.0" prefHeight="310.0" prefWidth="222.0">
+         <children>
+            <Text fill="#02476f" layoutX="88.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shapes:">
+               <font>
+                  <Font name="Corbel Bold" size="16.0" />
+               </font>
+            </Text>
+            <RadioButton id="lineBtn" fx:id="lineBtn" layoutX="14.0" layoutY="34.0" mnemonicParsing="false" text="Line" textFill="#00304c" />
+            <RadioButton id="rayBtn" fx:id="rayBtn" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" text="Ray" textFill="#00304c" />
+            <RadioButton id="triangleBtn" fx:id="polygonBtn" layoutX="14.0" layoutY="129.0" mnemonicParsing="false" text="Polygon" textFill="#00304c" />
+            <RadioButton fx:id="brokenLineBtn" layoutX="14.0" layoutY="105.0" mnemonicParsing="false" text="Broken line" textFill="#00304c" />
+            <RadioButton id="segmentBtn" fx:id="segmentBtn" layoutX="14.0" layoutY="82.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="88.0" text="Segment" textFill="#00304c" />
+            <RadioButton id="ellipseBtn" fx:id="ellipseBtn" layoutX="14.0" layoutY="201.0" mnemonicParsing="false" text="Ellipse" textFill="#00304c" />
+            <RadioButton id="rhombusBtn" fx:id="rhombusBtn" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" text="Rhombus" textFill="#00304c" />
+            <RadioButton id="parallelogramBtn" fx:id="parallelogramBtn" layoutX="14.0" layoutY="154.0" mnemonicParsing="false" text="Parallelogram" textFill="#00304c" />
+            <RadioButton id="circleBtn" fx:id="circleBtn" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" text="Circle" textFill="#00304c" />
+            <RadioButton fx:id="rectangleBtn" layoutX="14.0" layoutY="274.0" mnemonicParsing="false" text="Rectangle" textFill="#00304c" />
+            <RadioButton id="regularPolygonBtn" fx:id="regularPolygon" layoutX="14.0" layoutY="249.0" mnemonicParsing="false" text="Regular polygon" textFill="#00304c" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="referenceField" fill="#02476f" layoutX="602.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="194.39999999999986" />
+   </children>
 </AnchorPane>
