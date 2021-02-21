@@ -1,9 +1,9 @@
 package sample;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.control.ColorPicker;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
@@ -67,6 +67,26 @@ public class ShapeController {
     @FXML
     void initialize() {
 
+        ToggleGroup radioButtonGroup = new ToggleGroup();
+        lineBtn.setToggleGroup(radioButtonGroup);
+        rayBtn.setToggleGroup(radioButtonGroup);
+        polygonBtn.setToggleGroup(radioButtonGroup);
+        brokenLineBtn.setToggleGroup(radioButtonGroup);
+        segmentBtn.setToggleGroup(radioButtonGroup);
+        ellipseBtn.setToggleGroup(radioButtonGroup);
+        rhombusBtn.setToggleGroup(radioButtonGroup);
+        parallelogramBtn.setToggleGroup(radioButtonGroup);
+        circleBtn.setToggleGroup(radioButtonGroup);
+        rectangleBtn.setToggleGroup(radioButtonGroup);
+        regularPolygon.setToggleGroup(radioButtonGroup);
+
+        radioButtonGroup.selectedToggleProperty().addListener((observableValue, toggle, t1) -> {
+            if(radioButtonGroup.getSelectedToggle() != null) {
+                RadioButton selected = (RadioButton) radioButtonGroup.getSelectedToggle();
+
+            }
+
+        });
     }
 
 }
